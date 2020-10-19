@@ -33,7 +33,7 @@ def slack(request):
 
             if not data['ok']:
                 if data['error'] == 'already_invited':
-                    view_data['message'] = "You are already invited to this team! Please check your email!"
+                    view_data['message'] = "You are already invited to this team! Please recheck your email!"
                 else:
                     view_data['message'] = "Error: " + data['error']
 
